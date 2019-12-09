@@ -50,6 +50,7 @@ export class RestaurantInput extends Component {
 };
 
 const mapDispatchToProps = dispatch => {
+
   return {
     addRestaurant: (restaurant) => dispatch(addRestaurant(restaurant))
   }
