@@ -55,12 +55,12 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    addRestaurant: (newRestaurant) => dispatch(addRestaurant(newRestaurant))
-  }
-}
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     addRestaurant: (newRestaurant) => dispatch(addRestaurant(newRestaurant))
+//   }
+// }
 
 
 //connect this component by wrapping RestaurantInput below
-export default connect(mapStateToProps, mapDispatchToProps)(RestaurantInput)
+export default connect(mapStateToProps, { addRestaurant })(RestaurantInput)
